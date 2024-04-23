@@ -45,3 +45,71 @@ p {
 body {
   width: 100%;
 }
+
+/* header start */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #e3f6e3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.6s;
+  /* z-index: 100000; */
+}
+
+#header .sticky {
+  padding: 5px 100px;
+  background-color: #a7e6a7;
+}
+
+.logo {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #022c67;
+  letter-spacing: 2px;
+  font-weight: 900;
+  transition: 0.6s;
+  font-size: 30px;
+}
+
+#navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#navbar li {
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+}
+#navbar li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.6s;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background: #088178;
+  position: absolute;
+  left: 10px;
+  bottom: -4px;
+}
